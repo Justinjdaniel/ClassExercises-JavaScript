@@ -1,9 +1,10 @@
 function prime(){
-    var n=document.getElementById("prime").value;
+    var prime = document.getElementById("prime").value;
+    var array1 = Array.from(String(prime), Number);
     var i;
     var flag = true;
- 
-    n = parseInt(n) 
+
+    n = array1[0] 
     for(i = 2; i <= n - 1; i++) 
         if (n % i == 0) { 
             flag = false; 
